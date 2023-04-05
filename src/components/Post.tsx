@@ -12,7 +12,7 @@ export const Post = (post: PostInterface) => {
     return (
         <div key={_id} className="post">
             <div className="image">
-                <img src={image} alt="post image" />
+                {/* <img src={image} alt="post image" /> */}
             </div>
             <div className="content">
                 <Link className="link" to={`/post/${_id}`}>
