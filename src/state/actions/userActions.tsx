@@ -8,7 +8,7 @@ import { UserApi, UserProfile } from '../../Interface/apiUser';
 export const getUserId = (token:string) => async (dispatch:any) => {
     try {
         const { data } = await axios.get<UserProfile>(
-            `http://localhost:8002/api/user/:id`,
+            `https://postsapi-production-8963.up.railway.app/api/user/:id`,
             {
                 headers:{ Authorization :`Bearer ${token}`}
             }
@@ -25,7 +25,7 @@ export const getUserId = (token:string) => async (dispatch:any) => {
 export const getPostId = (id:string) => async (dispatch:any) => {
     try {
         const { data } = await axios.get<PostResponse>(
-            `http://localhost:8002/api/post/${id}`,
+            `https://postsapi-production-8963.up.railway.app/api/post/${id}`,
             
         );
         return dispatch(setPostId(data.data));
