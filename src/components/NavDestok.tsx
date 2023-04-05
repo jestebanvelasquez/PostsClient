@@ -23,6 +23,8 @@ export const NavDestok = ({ username, setLogout }: Props) => {
         {value: 'cine', label: 'Cine'},
         {value: 'comida', label: 'Comida'},
         {value: 'diseño', label: 'Diseño'},
+        {value: 'tecnologia', label: 'Tecnologia'},
+
 
     ]
 
